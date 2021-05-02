@@ -1,33 +1,36 @@
-Sendo um músico que possui equipamentos musicais
-Quero fazer o meu cadastro no RockLov
-Para que eu possa disponibilizá-los para locação
+#language: pt
 
-Cenario: Fazer cadastro
+Funcionalidade: Cadastro
+    Sendo um músico que possui equipamentos musicais
+    Quero fazer o meu cadastro no RockLov
+    Para que eu possa disponibilizá-los para locação
 
-    Dado que acesso a página de cadastro
-    Quando submeto o meu cadastro completo
-    Então sou redirecionado para o Dashboard
+    Cenario: Fazer cadastro
 
-Cenario: Submeter cadastro sem o nome
+        Dado que acesso a página de cadastro
+        Quando submeto o meu cadastro completo
+        Então sou redirecionado para o Dashboard
 
-    Dado que acesso a página de cadastro
-    Quando submeto o meu cadastro sem o nome
-    Então vejo a mensagem de alerta: Oops. Informe seu nome completo!
+    Cenario: Submeter cadastro sem o nome
 
-Cenario: Submeter cadastro sem o email
+        Dado que acesso a página de cadastro
+        Quando submeto o meu cadastro sem o nome
+        Então vejo a mensagem de alerta: Oops. Informe seu nome completo!
 
-    Dado que acesso a página de cadastro
-    Quando submeto o meu cadastro sem o email
-    Então vejo a mensagem de alerta: Oops. Informe um email válido!
+    Cenario: Submeter cadastro sem o email
 
-Cenario: Submeter cadastro com email incorreto
+        Dado que acesso a página de cadastro
+        Quando submeto o meu cadastro sem o email
+        Então vejo a mensagem de alerta: Oops. Informe um email válido!
 
-    Dado que acesso a página de cadastro
-    Quando submeto o meu cadastro com incorreto
-    Então vejo a mensagem de alerta: Oops. Informe um email válido!
+    Cenario: Submeter cadastro com email incorreto
 
-Cenario: Submeter cadastro sem a senha
+        Dado que acesso a página de cadastro
+        Quando submeto o meu cadastro com incorreto
+        Então vejo a mensagem de alerta: Oops. Informe um email válido!
 
-    Dado que acesso a página de cadastro
-    Quando submeto o meu cadastro sem a senha
-    Então vejo a mensagem de alerta: Oops. Informe sua senha secreta!
+    Cenario: Submeter cadastro sem a senha
+
+        Dado que acesso a página de cadastro
+        Quando submeto o meu cadastro sem a senha
+        Então vejo a mensagem de alerta: Oops. Informe sua senha secreta!
