@@ -4,5 +4,5 @@ require "capybara/cucumber"
 
 # Configurando o capybara (usando blocos do Ruby)
 Cabybara.configure do |config|
-    config.default_driver = :selenium # tipo de drive que será utilizado
+    config.default_driver = :selenium_chrome # tipo de drive que será utilizado
 end
