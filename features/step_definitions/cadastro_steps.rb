@@ -3,7 +3,7 @@ Dado('que acesso a página de cadastro') do
 end
   
 Quando('submeto o meu cadastro completo') do
-    find("#fullName").set "William Richard"#método do capybara e através dele da para buscar elementos css
+    find("#fullName").set "William Richard"#find método do capybara e através dele da para buscar elementos css
     find("#email").set "wrichaard@hotmail.com"
     find("#password").set "docker123"
 
@@ -11,5 +11,5 @@ Quando('submeto o meu cadastro completo') do
 end
   
 Então('sou redirecionado para o Dashboard') do
-    pending # Write code here that turns the phrase above into concrete actions
+    expect(page).to have_css ".dashboard"#expect Recursos de validação do Rspec
 end
