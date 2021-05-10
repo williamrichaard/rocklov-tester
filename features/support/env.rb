@@ -1,6 +1,7 @@
 # Importando capybara e cucumber
 require "capybara"
 require "capybara/cucumber"
+require "faker"
 
 # Configurando o capybara (usando blocos do Ruby)
 Cabybara.configure do |config|
