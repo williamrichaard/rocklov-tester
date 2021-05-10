@@ -4,7 +4,7 @@ end
   
 Quando('submeto o meu cadastro completo') do
     find("#fullName").set "William Richard" #find método do capybara e através dele da para buscar elementos css
-    find("#email").set "wrichaard@hotmail.com"
+    find("#email").set Faker::Internet.free_email
     find("#password").set "docker123"
 
     click_button "Cadastrar"
