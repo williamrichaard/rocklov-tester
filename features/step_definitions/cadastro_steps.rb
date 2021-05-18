@@ -13,3 +13,14 @@ end
 Então('sou redirecionado para o Dashboard') do
     expect(page).to have_css ".dashboard" #expect Recursos de validação do Rspec
 end
+
+Quando('submeto o meu cadastro sem nome') do
+    find("#email").set Faker::Internet.free_email 
+    find("#password").set "docker123"
+
+    click_button "Cadastrar"
+end 
+
+Então('vejo a mensagem de alerta: Oops. Informe seu nome completo!') do
+    pending #Escreva aqui o código que transforme a frase acima em ações concretas
+end
