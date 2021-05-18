@@ -22,5 +22,6 @@ Quando('submeto o meu cadastro sem nome') do
 end 
 
 Então('vejo a mensagem de alerta: Oops. Informe seu nome completo!') do
-    pending #Escreva aqui o código que transforme a frase acima em ações concretas
+    alert = find(".alert-dark")
+    expect(alert.text).to eql "Oops. Informe seu nome completo!"
 end
