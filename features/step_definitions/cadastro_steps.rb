@@ -34,8 +34,8 @@ Quando('submeto o meu cadastro sem email') do
 end 
 
 Quando('submeto o meu cadastro com email incorreto') do
-    find("#fullName").set "William Richard" #find método do capybara e através dele da para buscar elementos css
-    find("#email").set Faker::Internet.free_email #faker coloca emails aleatórios no campo email
+    find("#fullName").set "William Richard"
+    find("#email").set "william*hotmail.com"
     find("#password").set "docker123"
 
     click_button "Cadastrar"
