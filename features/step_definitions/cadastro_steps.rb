@@ -25,3 +25,14 @@ Então('vejo a mensagem de alerta: Oops. Informe seu nome completo!') do
     alert = find(".alert-dark")
     expect(alert.text).to eql "Oops. Informe seu nome completo!"
 end
+
+Quando('submeto o meu cadastro sem email') do
+    find("#fullName").set "William Richard" 
+    find("#password").set "docker123"
+
+    click_button "Cadastrar"
+end 
+
+Então('vejo a mensagem de alerta: Oops. Informe um email válido!') do
+
+end
