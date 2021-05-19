@@ -34,5 +34,6 @@ Quando('submeto o meu cadastro sem email') do
 end 
 
 Então('vejo a mensagem de alerta: Oops. Informe um email válido!') do
-
+    alert = find(".alert-dark")
+    expect(alert.text).to eql "Oops. Informe um email válido!"
 end
